@@ -198,7 +198,7 @@ console.log(val5);
 // console.log(array4);
 
 /**
- * mapやfilterを使用した配列処理
+ * mapやfilterを使用した配列処理について
  */
 
 const nameArr = ["田中", "山田", "じゃけぇ"];
@@ -228,14 +228,40 @@ const numArr = [1, 2, 3, 4, 5];
 // });
 // console.log(newNumArr);
 
-const newNameArr = nameArr.map((name) => {
-  if (name === "じゃけぇ") {
-    return name;
-  } else {
-    return `${name}さん`;
-  }
-});
-console.log(newNameArr);
+// const newNameArr = nameArr.map((name) => {
+//   if (name === "じゃけぇ") {
+//     return name;
+//   } else {
+//     return `${name}さん`;
+//   }
+// });
+// console.log(newNameArr);
+
+/**
+ * 三項演算子について
+ */
+
+// 【構文】　　条件　?　条件がtrueの時 : 条件がfalseの時
+//  const val1 = 1 > 0 ? 'trueです' : 'falseです';
+//  console.log(val1);
+
+// const num = 1300;
+// //toLocaleString()はカンマ区切りにできるメソッド
+// // console.log(num.toLocaleString());
+
+// //typeof その変数の型を判定してくれるもの
+// //三項演算子　numが数値ならカンマ区切りで表示。　数値以外なら'数値を入力してください'と表示
+// const formattedNum =
+//   typeof num === "number" ? num.toLocaleString() : "数値を入力してください。";
+// console.log(formattedNum);
+
+//num1　＋ num2が100を超えるかを三項演算子で判定して、返す値を変える関数
+// const checkSum = (num1, num2) => {
+//   return num1 + num2 > 100 ? '100を超えています！！' : '許容範囲内です。';
+// }
+
+// console.log(checkSum(50,60));
+// console.log(checkSum(50,40));
 
 document.getElementById("app").innerHTML = `
 <h1>Hello Vanilla!</h1>
