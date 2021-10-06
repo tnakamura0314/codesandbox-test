@@ -143,6 +143,14 @@ console.log(val5);
 // const message3 = `名前は${name}です。年齢は${age}歳です。`;
 // console.log(message3);
 
+/**
+ * 　デフォルト値、引数などについて
+ */
+
+//引数を(name = "ゲスト")と書くことで初期値（デフォルト値）を設定できる！
+// const sayHello = (name = "ゲスト") => console.log(`こんにちは!${name}さん！`);
+// sayHello();
+
 document.getElementById("app").innerHTML = `
 <h1>Hello Vanilla!</h1>
 <div>
