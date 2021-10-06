@@ -73,6 +73,37 @@ console.log(message1);
 const message2 = `私の名前は${name}です。年齢は${age}です。`;
 console.log(message2);
 
+/** アロー関数について */
+
+//従来の関数
+// function func1(str) {
+//   return str;
+// }
+const func1 = function (str) {
+  return str;
+};
+console.log(func1("func1です"));
+
+//アロー関数（function書かなくていい！）
+const func2 = (str) => {
+  return str;
+};
+
+//{}とreturnを省略してもOK！
+// const func2 = (str) => str；
+
+console.log(func2("func2です"));
+
+//2つの引数を渡す
+const func3 = (num1, num2) => {
+  return num1 + num2;
+};
+
+//{}とreturnを省略してもOK！
+// const func3 = (num1, num2) => num1 + num2;
+
+console.log(func3(2, 3));
+
 document.getElementById("app").innerHTML = `
 <h1>Hello Vanilla!</h1>
 <div>
