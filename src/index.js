@@ -221,7 +221,7 @@ const nameArr = ["田中", "山田", "じゃけぇ"];
 
 const numArr = [1, 2, 3, 4, 5];
 
-//filterは条件分岐で該当のもののみをとってこれる関数
+//filterは条件分岐で該当のもののみをとってきて新しい配列作れる
 // const newNumArr = numArr.filter((num) => {
 //   //２で割った余りが１になる奇数のみ返す
 //   return num % 2 === 1;
@@ -264,7 +264,7 @@ const numArr = [1, 2, 3, 4, 5];
 // console.log(checkSum(50,40));
 
 /**
- * 論理演算子の本当の意味を知ろう　 (&& ||)
+ * 論理演算子の本当の意味を知ろう　 (&&アンパサンド ||パイプライン)
  */
 
 // const flag1 = true;
