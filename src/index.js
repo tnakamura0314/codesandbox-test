@@ -151,6 +151,52 @@ console.log(val5);
 // const sayHello = (name = "ゲスト") => console.log(`こんにちは!${name}さん！`);
 // sayHello();
 
+/**
+ * スプレッド構文 ...
+ */
+
+// //配列の展開
+// const array = [1, 2];
+// // console.log(array);
+
+// //配列の中身を順番に処理してくれる　...
+// // console.log(...array);
+
+// const sumFunc = (num1, num2) => console.log(num1 + num2);
+
+// // sumFunc(array[0], array[1]);
+// //上の記述と同じ配列の中身を順番に処理してくれる　...
+// sumFunc(...array);
+
+//まとめる
+// const array2 = [1, 2, 3, 4, 5];
+// const [num1, num2, ...num3] = array2;
+
+// console.log(num1);
+// console.log(num2);
+// console.log(num3);
+
+//配列のコピー、結合
+
+// const array4 = [10, 20];
+// const array5 = [30, 40];
+
+// //配列をスプレット構文で代入(参照を引き継がずにarray6[0]の値だけ変更できる)
+// const array6 = [...array4];
+// console.log(array6);
+// array6[0] = 100;
+// console.log(array4);
+
+// //２つの配列を結合する！スプレット構文で
+// const array7 = [...array4, ...array5];
+// console.log(array7);
+
+//普通にイコールで代入してしまうと、同じ参照となるため、array4の値も変更されてしまう。
+// const array8 = array4;
+// array8[0] = 100;
+// console.log(array8);
+// console.log(array4);
+
 document.getElementById("app").innerHTML = `
 <h1>Hello Vanilla!</h1>
 <div>
