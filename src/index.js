@@ -197,6 +197,46 @@ console.log(val5);
 // console.log(array8);
 // console.log(array4);
 
+/**
+ * mapやfilterを使用した配列処理
+ */
+
+const nameArr = ["田中", "山田", "じゃけぇ"];
+
+// for (let index = 0; index < nameArr.length; index++) {
+//   console.log(nameArr[index]);
+// }
+
+// for (let index = 0; index < nameArr.length; index++) {
+//   console.log(`${index}番目は${nameArr[index]}です。`);
+// }
+
+// const nameArr2 = nameArr.map((name) => {
+//   return name;
+// });
+// console.log(nameArr2);
+
+//mapを使用してループ処理（206行目と同じ処理）
+//  nameArr.map((name, index) => console.log(`${index + 1}番目は${name}です。`));
+
+const numArr = [1, 2, 3, 4, 5];
+
+//filterは条件分岐で該当のもののみをとってこれる関数
+// const newNumArr = numArr.filter((num) => {
+//   //２で割った余りが１になる奇数のみ返す
+//   return num % 2 === 1;
+// });
+// console.log(newNumArr);
+
+const newNameArr = nameArr.map((name) => {
+  if (name === "じゃけぇ") {
+    return name;
+  } else {
+    return `${name}さん`;
+  }
+});
+console.log(newNameArr);
+
 document.getElementById("app").innerHTML = `
 <h1>Hello Vanilla!</h1>
 <div>
