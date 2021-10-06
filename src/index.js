@@ -1,6 +1,8 @@
 import "./styles.css";
 
-/** const,let等の変数宣言 */
+/**
+ * const,let等の変数宣言
+ *  */
 
 /**
 // var val1 = "var変数";
@@ -58,51 +60,88 @@ val5.push("monkey");
 console.log(val5);
 */
 
-/**　テンプレート文字列　*/
+/**
+ * 　テンプレート文字列
+ * */
 
-const name = "じゃけぇ";
-const age = 25;
+// const name = "じゃけぇ";
+// const age = 25;
 
 //「私の名前はじゃけぇです。年齢は25歳です。」
 
 //従来の方法
-const message1 = "私の名前は" + name + "です。年齢は" + age + "です。";
-console.log(message1);
+// const message1 = "私の名前は" + name + "です。年齢は" + age + "です。";
+// console.log(message1);
 
 //テンプレート文字列を用いた方法
-const message2 = `私の名前は${name}です。年齢は${age}です。`;
-console.log(message2);
+// const message2 = `私の名前は${name}です。年齢は${age}です。`;
+// console.log(message2);
 
-/** アロー関数について */
+/**
+ * アロー関数について
+ * */
 
 //従来の関数
 // function func1(str) {
 //   return str;
 // }
-const func1 = function (str) {
-  return str;
-};
-console.log(func1("func1です"));
+// const func1 = function (str) {
+//   return str;
+// };
+// console.log(func1("func1です"));
 
 //アロー関数（function書かなくていい！）
-const func2 = (str) => {
-  return str;
-};
+// const func2 = (str) => {
+//   return str;
+// };
 
 //{}とreturnを省略してもOK！
 // const func2 = (str) => str；
 
-console.log(func2("func2です"));
+// console.log(func2("func2です"));
 
 //2つの引数を渡す
-const func3 = (num1, num2) => {
-  return num1 + num2;
-};
+// const func3 = (num1, num2) => {
+//   return num1 + num2;
+// };
 
 //{}とreturnを省略してもOK！
 // const func3 = (num1, num2) => num1 + num2;
 
-console.log(func3(2, 3));
+// console.log(func3(2, 3));
+
+/**
+ * 分割代入(オブジェクト)
+ * */
+
+// const myProfile = {
+//   name: "じゃけぇ",
+//   age: 25
+// };
+
+//従来(オブジェクト)
+// const message1 = `名前は${myProfile.name}です。年齢は${myProfile.age}です。`;
+// console.log(message1);
+
+//分割代入(オブジェクト)
+// const { name, age } = myProfile;
+// const message1 = `名前は${name}です。年齢は${age}です。`;
+// console.log(message1);
+
+/**
+ * 分割代入(配列)
+ * */
+
+// const myProfile = ["じゃけぇ", 25];
+
+//従来(配列)
+// const message3 = `名前は${myProfile[0]}です。年齢は${myProfile[1]}歳です。`;
+// console.log(message3);
+
+//分割代入(配列) 132行目では配列の順番順に引数を指定
+// const [name, age] = myProfile;
+// const message3 = `名前は${name}です。年齢は${age}歳です。`;
+// console.log(message3);
 
 document.getElementById("app").innerHTML = `
 <h1>Hello Vanilla!</h1>
